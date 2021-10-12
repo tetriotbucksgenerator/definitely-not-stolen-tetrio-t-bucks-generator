@@ -6,6 +6,8 @@ download everything and run main.py, if it says No module named PIL do "pip inst
 
 ![image](https://user-images.githubusercontent.com/62716710/136877064-b90100b1-2f6b-4331-9715-97e3e4df8d71.png)
 
+i hope i dont have to mention that it is as real as kagari
+
 ---
 # definitely-legit-social-credit-generator
 
