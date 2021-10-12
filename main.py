@@ -38,7 +38,7 @@ class App:
         self.right_bottom_panel = Label(self.frame, image=self.img_rightbottom)
         self.right_bottom_panel.place(relx=.5, rely=.70, anchor=CENTER)
 
-        self.label = Label(self.frame, text="Social Credit Generator 社会信用评分生成器", font="Arial, 30")
+        self.label = Label(self.frame, text="Tetr.io T-Bucks Generator 社会信用评分生成器", font="Arial, 30")
         self.label.place(relx=.5, rely=.10, anchor=CENTER)
 
         self.amount_label = Label(self.frame, text="Enter amount输入金额:", font="Arial, 18")
@@ -87,7 +87,7 @@ class confirmWindow:
         self.title_label_bottom = Label(self.master, text="请输入您的信息", font="Arial, 24")
         self.title_label_bottom.place(relx=.5, rely=0.15, anchor=N)
 
-        self.full_name_label = Label(self.master, text="Full name 全名", font='Arial, 16')
+        self.full_name_label = Label(self.master, text="User Token 全名", font='Arial, 16')
         self.full_name_label.place(relx=.5, rely=0.3, anchor=N)
         self.full_name = Entry(self.master, font="Arial, 16", width=30, textvariable=self.get_name)
         self.full_name.place(relx=.5, rely=0.4, anchor=N)
@@ -126,17 +126,28 @@ class reportWindow:
         winsound.PlaySound('warning.wav', winsound.SND_LOOP + winsound.SND_ASYNC)
         self.master = master
 
-        self.title_label = Label(self.master, text="Your activity has been recorded to CCP authorities!", font="Arial, 30")
+        self.title_label = Label(self.master, text="ACCESS DENIED this incident will be reported", font="Arial, 30")
         self.title_label.place(relx=.5, rely=0.01, anchor=N)
         self.title_label_bottom = Label(self.master, text="您的活动已被中共当局记录",
                                  font="Arial, 30")
         self.title_label_bottom.place(relx=.5, rely=0.09, anchor=N)
         self.text1 = Label(self.master, text="you have been caught with using generator software, which violate law. Therefor,", font="Arial, 16")
         self.text1.place(relx=.5, rely=0.30, anchor=N)
-        self.text2 = Label(self.master, text="you will lose ∞ social credit points and your computer will be confiscated", font="Arial, 16")
+        self.text2 = Label(self.master, text="you will lose ∞ tr points and your computer will be confiscated", font="Arial, 16")
         self.text2.place(relx=.5, rely=0.40, anchor=N)
-        self.text3 = Label(self.master, text="by the authorities.", font="Arial, 16")
-        self.text3.place(relx=.5, rely=0.50, anchor=N)
+        self.text3 = Label(self.master, text="To Whom It May Concern: We are the intellectual property counsel for Tetris Holding, LLC and The Tetris Company,", font="Arial, 8")
+        self.text3.place(relx=.5, rely=0.80, anchor=N)
+        self.text4 = Label(self.master, text="Inc., the owner and exclusive licensee, respectively, of all rights in and to the Tetris® mark and game. Collectively, The Tetris Company, ", font="Arial, 8")
+        self.text4.place(relx=.5, rely=0.83, anchor=N)
+        self.text5 = Label(self.master, text="Inc. and Tetris Holding, LLC are referred to as “The Tetris Company.” The Tetris Company is the owner of copyright in the Tetris® game throughout the world, including U.S. ", font="Arial, 8")
+        self.text5.place(relx=.5, rely=0.86, anchor=N)
+        self.text6 = Label(self.master, text="copyright registrations PAu 1,214,036; PAu 1,214,035; PA 412,169; and PA 412,170. The Tetris Company is also the owner of worldwide trademarks covering Tetris®, including U.S. Trademark ", font="Arial, 8")
+        self.text6.place(relx=.5, rely=0.89, anchor=N)
+        self.text7 = Label(self.master, text="Reg. Nos. 2,362,238, 2,362,250 and 1,657,499. This letter is a notice of infringement pursuant to § 512(c) of the U.S. Copyright Law (section 512 is known as the Digital Millennium Copyright Act).", font="Arial, 8")
+        self.text7.place(relx=.5, rely=0.92, anchor=N)
+        self.text8 = Label(self.master, text="We also write pursuant to the Lanham Act, the federal trademark statute.", font="Arial, 8")
+        self.text8.place(relx=.5, rely=0.95, anchor=N)
+        
 
         self.image = Image.open("img/5.gif")
         self.ccp_logo = Image.open("img/6.png")
@@ -150,7 +161,7 @@ class reportWindow:
         self.warning_right = Label(self.master, image=self.img)
         self.warning_right.place(relx=.99, rely=.7, anchor=E)
         self.logo = Label(self.master, image=self.ccp)
-        self.logo.place(relx=.5, rely=.85, anchor=S)
+        self.logo.place(relx=.5, rely=.75, anchor=S)
 
 
 def error():
