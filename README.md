@@ -1,3 +1,10 @@
+# TETR.IO T-BUCKS GENERATOR
+
+i actually dont know python like at all so i just stole this, i dont even know how to make exe out of this
+
+download everything and run main.py, if it says No module named PIL do "pip install Pillow" then run again
+
+---
 # definitely-legit-social-credit-generator
 
 I made this simple GUI program for a meme, no cap.<br />
